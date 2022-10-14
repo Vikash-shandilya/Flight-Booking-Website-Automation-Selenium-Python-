@@ -8,7 +8,7 @@ import logging
 
 logging.basicConfig(filename='flight.log',format='%(asctime)s: %(levelname)s: %(message)s', datefmt='%y/%m/%d %H:%M:%S', level=logging.INFO, filemode='w')
 
-
+# for closing the notifications window popup
 chrome_options = webdriver.ChromeOptions()
 prefs = {"profile.default_content_setting_values.notifications" : 2}
 chrome_options.add_experimental_option("prefs",prefs)
